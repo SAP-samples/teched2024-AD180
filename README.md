@@ -4,22 +4,18 @@
 
 This repository contains the material for the SAP TechEd 2024 session called **AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities**.
 
-ABAP Cloud is the development model for building clean core compliant apps, services, and extensions on SAP S/4HANA Cloud, SAP S/4HANA, and SAP BTP ABAP Environment. ABAP Cloud covers different development scenarios such as transactional, analytical, intgeration, and enterprise search scenarios. The ABAP RESTful Application Programming Model (RAP) ist at the heart of ABAP Cloud for building transactional SAP Fiori apps, OData-based Web API, local APIs, and business events.
-
-In this hands-on tutorial, you will learn how the Joule's ABAP Developer capabilities can support the development of clean core compliant draft-enabled transactional SAP Fiori elements apps with the ABAP RESTful Application Programming Model (RAP) as well as read-only SAP Fiori elements apps in ABAP Cloud. You will also learn how to define and raise business events in RAP-based applications that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios.
-
-This hands-on tutorial applies to SAP BTP ABAP Environment systems with access to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core).
-
 ## Overview
 [^Top of page](#)
 
-This session introduces attendees to... 🚧
+This session introduces attendees to the Joule's ABAP Developer capabilities that support the fast development of transactional, draft-enabled SAP Fiori elements apps as well as read-only SAP Fiori elements apps with ABAP Cloud. Attendees will also learn how to use the _ABAP RESTful Application Programming Model_ (RAP) to define and raise business events that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios. A simple event handler class will also be implemented for the local consumption of business events.
+
+ABAP Cloud is the development model for building clean core compliant apps, services, and extensions on SAP S/4HANA Cloud, SAP S/4HANA, and SAP BTP ABAP Environment. ABAP Cloud covers different development scenarios such as transactional, analytical, intgeration, and enterprise search scenarios. The ABAP RESTful Application Programming Model (RAP) ist at the heart of ABAP Cloud for building transactional SAP Fiori apps, OData-based Web API, local APIs, and business events.
 
 ## Requirements
 [^Top of page](#)
 
 > The requirements to follow the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT) installation
-> on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the GenAI Hub.
+> on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core).
 > 
 > The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) must be imported into the relevant system. 
 
