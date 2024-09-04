@@ -14,17 +14,12 @@ ABAP Cloud is the development model for building clean core compliant apps, serv
 ## Requirements
 [^Top of page](#)
 
-> The requirements to follow the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT) installation
-> on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core).
-> 
-> The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) must be imported into the relevant system. 
-
-<details>
-  <summary>Click to expand!</summary>
+The requirements to follow the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT) installation 
+on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core). The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) must be imported into the relevant system. 
 
 The requirements to follow the exercises in this repository are:
 1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
-2. Access to an SAP BTP ABAP Environment system that is connected to _SAP AI Core_
+2. Access to an SAP BTP ABAP Environment system that is connected to SAP AI Core
    > ℹ️ **Info for SAP TechEd Virtual 2024**:   
    > During the virtual event, the exercises can be completed on the _SAP BTP ABAP Environment Trial_ that will be connected to the SAP AI Core.
    > → [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)      
@@ -32,33 +27,31 @@ The requirements to follow the exercises in this repository are:
 4. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
 5. [Adapt the Web Browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)   
 
-</details>
-
 ## Exercises
 [^Top of page](#)
 
-### 🛠Exercise Group A: Building Draft-enabled, Transactional SAP Fiori Apps with Business Events
+### 🛠Exercise Group A: Building Transactional, Draft-enabled SAP Fiori Apps with Business Events
 
-Learn to build a transactional SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities and raise business events for loosely coupled scenarios.
+Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
 
 | Exercise Group A | -- |
 | ------------- |  -- |
 | [Getting Started](exercises/ex0/README.md) | -- |
-| [Exercise 1: Generate a transactional OData UI Service E2E with GenAI and RAP](exercises/ex01/README.md) | -- |
+| [Exercise 1: Generate a transactional OData UI Service E2E with Joule's ABAP Developer capabilities](exercises/ex01/README.md) | -- |
 | [Exercise 2: Enhance the RAP BO behavior with a business event](exercises/ex02/README.md) | -- |
 | [Exercise 3: Play around with the AI-based ADT Wizard](exercises/ex03/README.md) | -- |
 
 
 ### 🛠Exercise Group B: Displaying hierachical data in SAP Fiori UI using read-only treeview
 
-Learn to build a read-only SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) assisted by Joule's ABAP Developer capabilities and display hierachical data in a read-only treeview.
+Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABAP Developer capabilities and display hierachical data in a read-only treeview.
 
 > ℹ️ **Note**: This is a standalone exercise that can be carried out independently of the previous exercise group (A).   
 > In case you start with this block then please begin with [Getting Started](exercises/ex0/README.md). 
 
 | Exercise Group B | -- |
 | ------------- |  -- |
-| [Exercise 4: Generate a read-only OData UI service with GenAI](exercises/ex04/README.md) | -- |
+| [Exercise 4: Generate a read-only OData UI service with Joule's ABAP Developer capabilities](exercises/ex04/README.md) | -- |
 | [Exercise 5: Implement the read-only treeview for hierachical data display](exercises/ex05/README.md) | -- |
 
 
@@ -72,18 +65,6 @@ Create a productive SAP Fiori elements List Report app with the SAP Business App
 | ------------- |  -- |
 | [Exercise 6: Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
 
-
-<!--
-
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
-
--->
 
 ## ⚠Known Issues
 [^Top of page](#)
