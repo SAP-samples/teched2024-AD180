@@ -66,8 +66,10 @@ Create a productive SAP Fiori elements List Report app with the SAP Business App
 | [Exercise 6: Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
 
 
-## ⚠Known Issues
+## Known Issues
 [^Top of page](#)
+
+No known Issue.
 
 ## Contributing
 [^Top of page](#)
