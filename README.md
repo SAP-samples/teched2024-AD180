@@ -15,17 +15,26 @@ ABAP Cloud is the development model for building clean core compliant apps, serv
 [^Top of page](#)
 
 The requirements to follow the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT) installation 
-on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core). The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) (package `/DMO/FLIGHT`) must be imported into the relevant system. 
+on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core). 
+The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) (package `/DMO/FLIGHT`) must be imported into the relevant system. 
 
-The requirements to follow the exercises in this repository are:
+Prior to complete the exercises in this repository you need to:
 1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
-2. Access to an SAP BTP ABAP Environment system that is connected to SAP AI Core
+2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
+   > ℹ️ The _SAP BTP ABAP Environment Trial_ will be connected to the SAP AI Core during SAP TechEd Virtual 2024, i.e. Oct 8-9, 2024.
+3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
+4. Adapt the Web Browser settings in your ADT installation:   
+    a. Choose _Window_ > _Preferences_ in the menu bar and go to _General_ > _Web Browser_.  
+    c. Activate the radio button _Use external web browser_.   
+    d. Select one of the listed external web browsers that are available, e.g. _Default system web browser_.
+       (⚠️Please make sure that _Internet Explorer_ is **NOT** selected.)   
+
+<!--
+4. Access to an SAP BTP ABAP Environment system that is connected to SAP AI Core
    > ℹ️ **Info for SAP TechEd Virtual 2024**:   
    > During the virtual event, the exercises can be completed on the _SAP BTP ABAP Environment Trial_ that will be connected to the SAP AI Core.
    > → [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)      
-
-4. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
-5. [Adapt the Web Browser settings in your ADT installation](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/requirements_rap_workshops.md#4-adapt-the-web-browser-settings-in-your-adt-installation)   
+-->
 
 ## Exercises
 [^Top of page](#)
