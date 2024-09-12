@@ -43,7 +43,7 @@ Prior to complete the exercises in this repository you need to:
 
 Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
 
-| Exercise Group A | -- |
+| Exercise Block A | -- |
 | ------------- |  -- |
 | [Getting Started](exercises/ex0/README.md) | -- |
 | [Exercise 1: Generate a transactional OData UI Service E2E with Joule's ABAP Developer capabilities](exercises/ex01/README.md) | -- |
@@ -64,15 +64,15 @@ Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABA
 | [Exercise 5: Implement the read-only treeview for hierachical data display](exercises/ex05/README.md) | -- |
 
 
-### 🛠Exercise Block C: Create and deploy a SAP Fiori elements app with SAP BAS (_optional_)
+### 🛠 Optional Exercise: Create and deploy a SAP Fiori elements app with SAP BAS
 
 Create a productive SAP Fiori elements List Report app with the SAP Business Application Studio (SAP BAS) on top of an OData service built with the ABAP RESTful Application Programming Model (RAP) and deploy it into the SAP BTP ABAP Environment system. 
 
-> ℹ️ **Note**: This exercise can be completed immediately after Exercise Group A and Exercise Group B.
+> ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B.
 
-| Exercise Group C | -- |
+| Exercise | -- |
 | ------------- |  -- |
-| [Exercise 6: Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
+| [Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
 
 
 ## Known Issues
