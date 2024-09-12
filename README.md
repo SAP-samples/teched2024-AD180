@@ -55,7 +55,7 @@ Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTfu
 
 Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABAP Developer capabilities and display hierachical data in a read-only treeview.
 
-> ℹ️ **Note**: This is a standalone exercise that can be carried out independently of the previous exercise group (A).   
+> ℹ️ **Note**: This is a standalone exercise that can be carried out independently of the previous exercise block (A).   
 > In case you start with this block then please begin with [Getting Started](exercises/ex0/README.md). 
 
 | Exercise Block B | -- |
@@ -68,11 +68,11 @@ Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABA
 
 Create a productive SAP Fiori elements List Report app with the SAP Business Application Studio (SAP BAS) on top of an OData service built with the ABAP RESTful Application Programming Model (RAP) and deploy it into the SAP BTP ABAP Environment system. 
 
-> ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B.
+> ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B, which are independent exercises blocks.
 
 | Exercise | -- |
 | ------------- |  -- |
-| [Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
+| [Exercise 6: Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
 
 
 ## Known Issues
