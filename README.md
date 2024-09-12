@@ -39,7 +39,7 @@ Prior to complete the exercises in this repository you need to:
 ## Exercises
 [^Top of page](#)
 
-### 🛠Exercise Group A: Building Transactional, Draft-enabled SAP Fiori Apps with Business Events
+### 🛠Exercise Block A: Building Transactional, Draft-enabled SAP Fiori Apps with Business Events
 
 Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
 
@@ -51,20 +51,20 @@ Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTfu
 | [Exercise 3: Play around with the AI-based ADT Wizard](exercises/ex03/README.md) | -- |
 
 
-### 🛠Exercise Group B: Displaying hierachical data in SAP Fiori UI using read-only treeview
+### 🛠Exercise Block B: Displaying hierachical data in SAP Fiori UI using read-only treeview
 
 Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABAP Developer capabilities and display hierachical data in a read-only treeview.
 
 > ℹ️ **Note**: This is a standalone exercise that can be carried out independently of the previous exercise group (A).   
 > In case you start with this block then please begin with [Getting Started](exercises/ex0/README.md). 
 
-| Exercise Group B | -- |
+| Exercise Block B | -- |
 | ------------- |  -- |
 | [Exercise 4: Generate a read-only OData UI service with Joule's ABAP Developer capabilities](exercises/ex04/README.md) | -- |
 | [Exercise 5: Implement the read-only treeview for hierachical data display](exercises/ex05/README.md) | -- |
 
 
-### 🛠Exercise Group C: Create and deploy a SAP Fiori elements app with SAP BAS (_optional_)
+### 🛠Exercise Block C: Create and deploy a SAP Fiori elements app with SAP BAS (_optional_)
 
 Create a productive SAP Fiori elements List Report app with the SAP Business Application Studio (SAP BAS) on top of an OData service built with the ABAP RESTful Application Programming Model (RAP) and deploy it into the SAP BTP ABAP Environment system. 
 
