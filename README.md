@@ -1,4 +1,4 @@
-# AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities
+# AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP developer capabilities
 
 ## Description
 
