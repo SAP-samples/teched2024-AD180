@@ -226,7 +226,7 @@ At the end, you will publish and preview your _Employee_ app using the _Fiori El
     
 </details>
  
-### Exercise 4.3.2: Adjust the UI Semantic  
+### Exercise 4.3.2: Adjust the UI Semantics  
  
 > In this exercise, you will will adjust the application layout by adjusting the UI semantic in the metadata extension. 
 > 
