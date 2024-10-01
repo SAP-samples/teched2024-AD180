@@ -21,7 +21,7 @@ The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.co
 Prior to complete the exercises in this repository you need to:
 1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
 2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
-   > ℹ️ The _SAP BTP ABAP Environment Trial_ will be connected to the SAP AI Core during SAP TechEd Virtual 2024, i.e. Oct 8-9, 2024.
+   > ℹ️ **Note**: The _SAP BTP ABAP Environment Trial_ will only be connected to the SAP AI Core during the SAP TechEd Virtual 2024, from the 8th to the 11th October.
 3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
 4. Adapt the Web Browser settings in your ADT installation:
       <details>
@@ -48,6 +48,11 @@ Prior to complete the exercises in this repository you need to:
 
 Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
 
+<details>
+  <summary>Resulting app > Click to expand!</summary>
+    <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
+</details>  
+
 | Exercise Block A | -- |
 | ------------- |  -- |
 | [Getting Started](exercises/ex0/README.md) | -- |
@@ -58,7 +63,12 @@ Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTfu
 
 ### 🛠Exercise Block B: Displaying hierachical data in SAP Fiori UI using read-only treeview
 
-Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABAP Developer capabilities and display hierachical data in a read-only treeview.
+Learn to build a read-only SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) assisted by generative AI and display hierachical data in a read-only treeview.
+
+<details>
+  <summary>Resulting app > Click to expand!</summary>
+    <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
+</details>  
 
 > ℹ️ **Note**: This is a standalone exercise that can be carried out independently of the previous exercise block (A).   
 > In case you start with this block then please begin with [Getting Started](exercises/ex0/README.md). 
@@ -69,6 +79,7 @@ Learn to build a read-only SAP Fiori app with ABAP Cloud assisted by Joule's ABA
 | [Exercise 5: Implement the read-only treeview for hierachical data display](exercises/ex05/README.md) | -- |
 
 
+<!--
 ### 🛠 Optional Exercise: Create and deploy a SAP Fiori elements app with SAP BAS
 
 Create a productive SAP Fiori elements List Report app with the SAP Business Application Studio (SAP BAS) on top of an OData service built with the ABAP RESTful Application Programming Model (RAP) and deploy it into the SAP BTP ABAP Environment system. 
@@ -79,6 +90,7 @@ Create a productive SAP Fiori elements List Report app with the SAP Business App
 | ------------- |  -- |
 | [Exercise 6: Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
 
+--> 
 
 ## Known Issues
 [^Top of page](#)
