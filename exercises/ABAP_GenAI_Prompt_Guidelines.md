@@ -7,7 +7,7 @@ To achieve good results with your prompts, please consider the following recomme
 - [Context](#context) 
 - [Terminology](#terminology)
 - [Model-related Recommendations](#model-related-recommendations)
-- [Prompt Examples](#prompt-examples) 🚧🚧
+- [Prompt Examples](#prompt-examples) 
 
 ## Accuracy 
 
@@ -60,21 +60,7 @@ Replace `###` with your own desired prefix or suffix.
 
 ---
 
-### Example 1: Generate a read-only OData V4 UI service with a single business entity 🚧
-
-
-**Display Employee entities**
-
-```PROMPT
-Generate a read-only application for displaying employees. 
-The employee entity requires the fields employee_id, first_name, last_name, salary, and manager. 
-Use a numerical data type with length 6 for the fields employee_id and manager.
-Use built-in character string data type CHAR with length 40 for the fields first_name and last_name. 
-Salary is a decimals with length 21. The field salary is a currency field. 
-Create the object names with the suffix '###'.
-````
-
-**Display Customer entities**
+### Example 1: Generate a read-only OData V4 UI service with a single business entity to display customers 
 
 ```PROMPT
 Generate a read-only application for managing customers.
@@ -83,29 +69,7 @@ Use charater like daa types for the fields.
 Create the object names with prefix '###'.
 ````
 
-----
-
-### Example 2: Generate a read-only OData V4 UI service with a multiple business entities 🚧
-
-
-**Display Agency and Employee entities.**
-
-```PROMPT
-Generate a read-only application for managing agencies and employees. 
-🚧 to be enhanced soon 🚧
-The employee entity requires the fields employee_id, first_name, last_name, salary, and manager_id.
-Use numerical text data type with length 8 like data types for the fields employee_id and manager_id. 
-Use character like data types for the other fields.
-The field salary is a currency field. 
-
-Create the object names with the suffix '###'.
-````
-
-----
-
-### Example 3: Generate a draft-enabled OData V4 UI service with a single business object entity to manage customer
-
-**Manage Travel entity.**
+### Example 2: Generate a draft-enabled OData V4 UI service with a single business object entity to manage customer
 
 ```PROMPT
 Generate an application for managing customers.
@@ -115,9 +79,7 @@ Create the object names with prefix '###'.
 
 ````
 
-----
-
-### Example 4: Generate a draft-enabled OData V4 UI service with multiple entities connected via compositional associations
+### Example 3: Generate a draft-enabled OData V4 UI service with multiple entities connected via compositional associations
 
 **Manage Travel, Booking, and Booking Supplement entities.**
 
@@ -140,28 +102,6 @@ Use currency data types for fields price and currency.
 
 Create the object names with prefix '###'.
 ````
-
-----
-
-### Example 5: Generate a read-only OData V4 UI service with multiple entities 
-🚧
-```PROMPT
- 🚧 coming soon 🚧
- Generate an application for managing agencies. 
- 
- The agency entity requires the fields agency_id, agency_name, street, postal_code, city, 
- country_code, phone_number, email_address, and /dmo/web_address.
- 
- Use a numerical data type with length 6 for the field agency_id. 
- country_code is a country key with length 3.
- 
- Use character like data types for the other fields with length 80 for field agency_name, 
- length 60 for field street, length 10 for field postal_code, length 40 for field city, 
- length 30 for field phone_number, length 256 for field email_address, and length 256 for field web_address.
- 
- Create the object names with the suffix '###'.
- 🚧
-```
 
 ## License
 

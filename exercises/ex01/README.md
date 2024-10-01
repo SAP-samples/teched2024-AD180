@@ -177,17 +177,24 @@ You will create an ABAP package, generate all development artefacts using the Ge
 ## Exercise 1.3: Adjust the Generated UI Service
 [^Top of page](#)
 
-> Typically, you will need to adjust the generated artifacts to fit your use case. 
+> Typically, you will need to adjust the generated repository object to fit your use case. 
+> For example, you can adjust the data type of the database table fields, adjust the consumption view to enrich the projected data model, and adjust the metadata extension to change the Fiori app layout.  
 > 
 > In the present exercise, you will eventually have to adjust the data type of the **agency ID**  in the database tables for active and draft data. 
 > The data type of this field should be a numical text with length 6, i.e. **`abap.numc(6)`**. 
 > 
-> ⚠️ PS: The names of the database tables and fields generated in your exercise package may differ from those used in the description, code snippets, and screenshots below.
+> ⚠️ PS: The names of the generated repository objects and fields in your exercise package may differ from those used in the description, code snippets, and screenshots below.
+
+
+### Exercise 1.3.1: Adjust the Generated Database Tables 
+
+> In this exercise, you will eventually have to adjust the data type of the **agency ID**  in the database tables for active and draft data. 
+> The data type of this field should be a numical text with length 6, i.e. **`abap.numc(6)`**. 
 
  <details>
   <summary>🔵 Click to expand!</summary>
 
-   1. Go to your package in the **Project Explorer**, open the database tabl ![table](../images/adt_table.png)**`ZAGENCY###`** for storing the active _agency_ data and replace the data type of the field **`agency_id`** with **`abap.numc(6)`** if necessary. Then save ![save icon](../images/adt_save.png) and activate ![activate icon](../images/adt_activate.png) the changes.     
+   1. Go to your package in the **Project Explorer**, open the database tabl ![table](../images/adt_tabl.png)**`ZAGENCY###`** for storing the active _agency_ data and replace the data type of the field **`agency_id`** with **`abap.numc(6)`** if necessary. Then save ![save icon](../images/adt_save.png) and activate ![activate icon](../images/adt_activate.png) the changes.     
  
       Do the same for the database table ![table](../images/adt_tabl.png)**`ZAGENCY###_D`** for storing the draft _agency_ data, and replace the data type of the field **`agency_id`** with **`abap.numc(6)`** if necessary. Then save ![save icon](../images/adt_save.png) and activate ![activate icon](../images/adt_activate.png) the changes. 
  
@@ -195,22 +202,44 @@ You will create an ABAP package, generate all development artefacts using the Ge
        abap.numc(6); 
       ```       
       
-      <img src="images/p13.png" alt="Adjust generated UI service" width="100%">
-  
-   2. You can also go ahead and, for example, adjust the projected data model by defining value helps in the ![ddls](../images/adt_ddls.png)CDS projection view (`ZC*`), and adjust the UI semantics in the ![ddlx](../images/adt_ddlx.png)CDS metadata extension.
+      <img src="images/p13.png" alt="Adjust generated UI service" width="70%">
+
+ </details>
  
-      For example, open the the projection view ![ddls](../images/adt_ddls.png)**`ZC_AGENCY###`** and specify the field element **`AgencyId`** as semantic key for the application and also define a value help for the **`AgencyId`**.
-     
-      Add the view annotation below to specify the field element **`AgencyId`** as semantic key for the application.  
+ 
+### Exercise 1.3.2: Adjust the Consumption view    
+
+> You can also go ahead and adjust the projected data model by defining value helps in the ![ddls](../images/adt_ddls.png)CDS projection view (`ZC*`) to ease the data maintenance in the app.
+
+ <details>
+  <summary>🔵 Click to expand!</summary>
+ 
+   1. Go to your package in the **Project Explorer** and open the the projection view ![ddls](../images/adt_ddls.png)**`ZC_AGENCY###`**
+ 
+   2. specify the field element **`AgencyId`** as semantic key for the application by add the **view annotation** below.  
  
       ```ABAP_CDS
        @ObjectModel.semanticKey: ['AgencyId']
       ```         
  
-      Now, add the element annotation block below to define an associated text and a value help for the field **`AgencyId`**.
+   3. Also specify the projection view as searchable by adding the following view annotation as shown on the screenshot below:
+ 
+      ```
+      @Search.searchable: true
+      ```
+
+   4. Enable the fuzzy search, i.e. a full-text search with the error tolerance (fuzziness threshold) `0.8`, for the element **`AgencyName`**by specifying the following annotation block directly before the element:
+ 
+      ```
+      @Search: {
+        defaultSearchElement: true,
+        fuzzinessThreshold:  0.8
+      }
+      ```
+ 
+   5. Now, add the **element annotation** block below just before **`AgencyId`* in the _select_ list to define a value help for the _agency ID_. The `additionalBinding` annotation will help automatically filling the related fields `AgencyName`, `Street`, `PostalCode`, and `City` at the same time.
  
       ```ABAP_CDS
-       @ObjectModel.text.element: ['AgencyName']
        @Consumption.valueHelpDefinition: [{
              entity : {name: '/DMO/I_Agency_StdVH', element: 'AgencyID'  },
              additionalBinding: [ { localElement: 'AgencyName',  element: 'Name',         usage: #RESULT },
@@ -219,12 +248,55 @@ You will create an ABAP package, generate all development artefacts using the Ge
                                   { localElement: 'City',        element: 'City',         usage: #RESULT } ],
              useForValidation: true }] 
       ```        
+      
+      <br/>
+      <img src="images/p13b.png" alt="Adjust generated UI service" width="70%">
  
-      <img src="images/p13b.png" alt="Adjust generated UI service" width="100%">
+   4. Save ![save icon](../images/adt_save.png) and activate ![activate icon](../images/adt_activate.png) the changes. 
  
-   3. Save ![save icon](../images/adt_save.png) and activate ![activate icon](../images/adt_activate.png) the changes. 
+ </details> 
  
-</details>
+ 
+### Exercise 1.3.3: Adjust the UI Semantics   
+ 
+> In this exercise, you will adjust the application layout by adjusting the UI semantics in the ![ddlx](../images/adt_ddlx.png)CDS metadata extension. 
+
+ <details>
+  <summary>🔵 Click to expand!</summary>
+ 
+   1. Go to your package in the **Project Explorer** and open the generated CDS metadata extension ![ddlx](../images/adt_ddlx.png)**`ZC_AGENCY###`**. 
+ 
+   2. Adjust the **`@headerInfo`** annotation by specifying **`AgencyId`** as title value and **`AgencyName`** as description. 
+ 
+      For that, simply replace the line _`@UI.headerInfo.title.value: 'Uuid'`_ with 
+ 
+      ```
+      @UI.headerInfo.title.value: 'AgencyId'
+      ```
+      
+      and replace the line _`@UI.headerInfo.description.value: 'Uuid'`_ with 
+ 
+      ```
+      @UI.headerInfo.description.value: 'AgencyName'
+      ```
+ 
+      <img src="images/p13c.png" alt="Adjust generated UI service" width="50%"> 
+ 
+   3. Remove some fields - e.g. `Street`, `PostalCode`, `CountryCode`, `PhoneNumber`, `EmailAddress`, and `WebAddress` - from the filter bar by deleting or commenting out (`//`) the element annotation block **`@UI.selectionField`** as follows: 
+ 
+      <img src="images/p13d.png" alt="Adjust generated UI service" width="30%">
+ 
+   4. Remove some fields - e.g. `Street`, `PostalCode`, `CountryCode`, `PhoneNumber`, `EmailAddress`, and `WebAddress` - from the list table  by deleting or commenting out (`//`) the element annotation block **`@UI.lineItem`** as follows:  
+ 
+      <img src="images/p13e.png" alt="Adjust generated UI service" width="30%">
+ 
+   5. Remove the adminstrative fields and their related annotations from the metadata extension: **`LocalCreatedBy`**, **`LocalCreatedAt`**, **`LocalLastChangedBy`**, **`LocalLastChangedAt`**, and **`LastChangedAt`**.
+ 
+      <img src="images/p13f.png" alt="Adjust generated UI service" width="50%">  
+ 
+   6. Save ![save icon](../images/adt_save.png) and activate ![activate icon](../images/adt_activate.png) the changes. 
+ 
+ </details>
 
 
 ## Exercise 1.4: Populate Demo Data
