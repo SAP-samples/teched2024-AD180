@@ -14,19 +14,19 @@ This repository contains the material for the SAP TechEd 2024 session called **A
 ## Overview
 [^Top of page](#)
 
-This session introduces attendees to the Joule's ABAP developer capabilities that support the fast development of transactional asa well as read-only SAP Fiori elements apps with ABAP Cloud. They will also learn how to use the _ABAP RESTful Application Programming Model_ (RAP) to define and raise business events that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios.
-
 ABAP Cloud is the development model for building clean core compliant apps, services, and extensions on SAP S/4HANA Cloud, SAP S/4HANA, and SAP BTP ABAP Environment. ABAP Cloud covers different development scenarios such as transactional, analytical, intgeration, and enterprise search scenarios. The ABAP RESTful Application Programming Model (RAP) ist at the heart of ABAP Cloud for building transactional SAP Fiori apps, OData-based Web API, local APIs, and business events.
 
+This session introduces attendees to the Joule's ABAP developer capabilities that support the fast development of transactional asa well as read-only SAP Fiori elements apps with ABAP Cloud. Attendees will learn how to display data in hierarchical treeview and how to define and raise business events with ABAP Cloud that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios. 
+
 **SAP Fiori element-based app 01**  
-In the first exercise block, you will learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios. You will also learn to implement an event handler for the local consumption of the RAP business events.
+In the first exercise block, you will learn how to build a transactional, draft-enabled SAP Fiori app with ABAP RAP powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios. You will also learn to implement an event handler for the local consumption of the RAP business events.
 
 <details>
   <summary>Resulting app 01 > Click to expand!</summary>
     <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
 </details>  
 
-**SAP Fiori element-based app 01**  
+**SAP Fiori element-based app 02**  
 In the second exercise block, you will learn how to build a read-only SAP Fiori app with ABAP Cloud assisted Joule and display data in a hierachical tree view.
 
 <details>
