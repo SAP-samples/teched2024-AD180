@@ -102,5 +102,13 @@ Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
+## Further Information
+[^Top of page](#)
+
+ - [ABAP RESTful Application Programming Model (RAP)](https://community.sap.com/topics/abap/rap) | SAP Community page   
+ - [Modernization with RAP](https://blogs.sap.com/2021/10/18/modernization-with-rap/) | SAP Blogs
+ - [RAP100 Tutorials Mission on SAP Developers Center](https://developers.sap.com/mission.sap-fiori-abap-rap100.html) | SAP Tutorials
+ - [Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) | SAP Tutorials
+ - 
 ## License
 Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
