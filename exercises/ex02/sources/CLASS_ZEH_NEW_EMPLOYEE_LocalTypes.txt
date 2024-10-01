@@ -1,0 +1,41 @@
+*"* use this source file for the definition and implementation of
+*"* local helper classes, interface definitions and type
+*"* declarations
+CLASS lhe_employee DEFINITION INHERITING FROM cl_abap_behavior_event_handler.
+  PRIVATE SECTION.
+    METHODS get_uuid RETURNING VALUE(uuid) TYPE sysuuid_x16.
+
+    METHODS on_entity_created FOR ENTITY EVENT
+       created FOR employee~entity_created.
+ENDCLASS.
+
+
+CLASS lhe_employee IMPLEMENTATION.
+
+  METHOD get_uuid.
+    TRY.
+        uuid = cl_system_uuid=>create_uuid_x16_static( ) .
+      CATCH cx_uuid_error.
+    ENDTRY.
+  ENDMETHOD.
+
+  METHOD on_entity_created.
+    "close the active modify phase
+    cl_abap_tx=>save( ).
+
+    "loop over transfered instances and do the needful :)
+    LOOP AT created REFERENCE INTO DATA(lr_created).
+      DATA lr_entity_created TYPE ZEMPLOYEE###_E.
+      MOVE-CORRESPONDING lr_created->* TO lr_entity_created.
+      lr_entity_created-uuid = get_uuid( ).
+      lr_entity_created-employeeid = lr_created->employee_id.
+      lr_entity_created-firstname = lr_created->first_name.
+      lr_entity_created-lastname = lr_created->last_name.
+      lr_entity_created-managerid = lr_created->manager_id.
+      lr_entity_created-created_at = utclong_current( ).
+      "insert to db
+      INSERT ZEMPLOYEE###_E FROM @lr_entity_created.
+    ENDLOOP.
+  ENDMETHOD.
+
+ENDCLASS.
