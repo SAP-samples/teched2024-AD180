@@ -22,7 +22,7 @@ ABAP Cloud is the development model for building clean core compliant apps, serv
 In the first exercise block, you will learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios. You will also learn to implement an event handler for the local consumption of the RAP business events.
 
 <details>
-  <summary>Resulting app > Click to expand!</summary>
+  <summary>Resulting app 01 > Click to expand!</summary>
     <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
 </details>  
 
@@ -30,7 +30,7 @@ In the first exercise block, you will learn how to build a transactional, draft-
 In the second exercise block, you will learn how to build a read-only SAP Fiori app with ABAP Cloud assisted Joule and display data in a hierachical tree view.
 
 <details>
-  <summary>Resulting app > Click to expand!</summary>
+  <summary>Resulting app 02 > Click to expand!</summary>
     <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
 </details>  
 
@@ -69,7 +69,7 @@ Before completing the exercises in this repository, you need to:
 Learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
 
 <details>
-  <summary>Resulting app > Click to expand!</summary>
+  <summary>Resulting app 01 > Click to expand!</summary>
     <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
 </details>  
 
@@ -86,7 +86,7 @@ Learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RE
 Learn how to build a read-only SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) assisted by generative AI and display hierachical data in a read-only treeview.
 
 <details>
-  <summary>Resulting app > Click to expand!</summary>
+  <summary>Resulting app 02 > Click to expand!</summary>
     <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
 </details>  
 
