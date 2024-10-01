@@ -24,12 +24,12 @@ Prior to complete the exercises in this repository you need to:
 2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) *
    > ℹ️ **Note**: For the the SAP TechEd Virtual 2024, the _SAP BTP ABAP Environment_ trial will be connected to the SAP AI Core from the 8th to the 11th October.
 3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
-4. Adapt the Web Browser settings in your ADT installation:
-      a. Choose _Window_ > _Preferences_ in the menu bar
-      b. Go to _General_ > _Web Browser_.
-      c. Activate the radio button _Use external web browser_.
-      d. Select one of the listed external web browsers that are available, e.g. _Default system web browser_.  
-         (⚠️Please make sure that _Internet Explorer_ is not selected.)
+4. Adapt the Web Browser settings in your ADT installation:   
+    i) Choose _Window_ > _Preferences_ in the menu bar.   
+    ii) Navigate to _General_ > _Web Browser_.  
+    iii) Activate the radio button _Use external web browser_.   
+    iv) Select one of the listed external web browsers that are available, e.g. _Default system web browser_.    
+        ❗Make sure that _Internet Explorer_ is not selected.   
    
 ## Exercises
 [^Top of page](#)
