@@ -4,14 +4,39 @@
 
 This repository contains the material for the SAP TechEd 2024 session called **AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities**.
 
+- [Requirements for attending this workshop](#requirements-for-attending-this-workshop)
+- [Overview](#overview)
+- [Exercises](#exercises)
+- [Recording](#recording)
+- [How to obtain support](#how-to-obtain-support) 
+- [Further Information](#further-information)
+
 ## Overview
 [^Top of page](#)
 
-This session introduces attendees to the Joule's ABAP Developer capabilities that support the fast development of transactional, draft-enabled SAP Fiori elements apps as well as read-only SAP Fiori elements apps with ABAP Cloud. Attendees will also learn how to use the _ABAP RESTful Application Programming Model_ (RAP) to define and raise business events that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios. A simple event handler class will also be implemented for the local consumption of business events.
+This session introduces attendees to the Joule's ABAP developer capabilities that support the fast development of transactional asa well as read-only SAP Fiori elements apps with ABAP Cloud. They will also learn how to use the _ABAP RESTful Application Programming Model_ (RAP) to define and raise business events that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios.
 
 ABAP Cloud is the development model for building clean core compliant apps, services, and extensions on SAP S/4HANA Cloud, SAP S/4HANA, and SAP BTP ABAP Environment. ABAP Cloud covers different development scenarios such as transactional, analytical, intgeration, and enterprise search scenarios. The ABAP RESTful Application Programming Model (RAP) ist at the heart of ABAP Cloud for building transactional SAP Fiori apps, OData-based Web API, local APIs, and business events.
 
-## Requirements
+**SAP Fiori element-based app 01**  
+In the first exercise block, you will learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios. You will also learn to implement an event handler for the local consumption of the RAP business events.
+
+<details>
+  <summary>Resulting app > Click to expand!</summary>
+    <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
+</details>  
+
+**SAP Fiori element-based app 01**  
+In the second exercise block, you will learn how to build a read-only SAP Fiori app with ABAP Cloud assisted Joule and display data in a hierachical tree view.
+
+<details>
+  <summary>Resulting app > Click to expand!</summary>
+    <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
+</details>  
+
+
+
+## Requirements for attending this workshop
 [^Top of page](#)
 
 The requirements to follow the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT) installation 
@@ -30,7 +55,7 @@ Before completing the exercises in this repository, you need to:
         ❗Make sure that _Internet Explorer_ is not selected.   
 
 <!--   
-## Presentation
+## Overview
 [^Top of page](#)
 
  🔗[Access the presentation](url)
@@ -41,7 +66,7 @@ Before completing the exercises in this repository, you need to:
 
 ### 🛠Exercise Block A: Building Transactional, Draft-enabled SAP Fiori Apps with Business Events
 
-Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
+Learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
 
 <details>
   <summary>Resulting app > Click to expand!</summary>
@@ -58,7 +83,7 @@ Learn to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTfu
 
 ### 🛠Exercise Block B: Displaying hierachical data in SAP Fiori UI using read-only treeview
 
-Learn to build a read-only SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) assisted by generative AI and display hierachical data in a read-only treeview.
+Learn how to build a read-only SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) assisted by generative AI and display hierachical data in a read-only treeview.
 
 <details>
   <summary>Resulting app > Click to expand!</summary>
