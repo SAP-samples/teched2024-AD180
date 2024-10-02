@@ -1,6 +1,6 @@
-[Home - RAP120](/README.md#exercises)
+[Home - AD180](/README.md#exercises)
 
-# Exercise 2: Enhance the RAP BO Behavior with a Business Event
+# Exercise 2: Enhance the RAP BO Behavior with a Business Event and Consume it locally
 
 ## Introduction
 In the previous exercise, you've generated a UI service and the underlying RAP BO with the AI-based RAP BO generator (_Beta_) (see [Exercise 1](../ex01/README.md)).   
@@ -62,13 +62,14 @@ For the local event consumption, you will implement an event handler class that 
   3. Replace the default data definition with the source code provided below. Replace the placeholder **`###`** is your suffix.
         
         ```ABAP CDS
-          @EndUserText.label: 'Agency abtract entity'
-          define abstract entity ZA_Agency_###
-          {
-            agency_id   : abap.numc(6);
-            agency_name : abap.char(80);
-            created_at  : abp_creation_tstmpl;            
-          }  
+        @EndUserText.label: 'Agency abtract entity'
+        define abstract entity ZA_Agency_###
+        {
+          agency_id   : abap.numc(6);
+          agency_name : abap.char(80);
+          created_by  : abp_creation_user;
+          created_at  : abp_creation_tstmpl;            
+        }  
         ```
   
      <img src="images/event2.png" alt="CDS Abstract Entity" width="60%">   
@@ -144,22 +145,23 @@ For the local event consumption, you will implement an event handler class that 
      For that, replace the empty implementation of the method **`save_modified`** with the source code provided below and replace all occurences of the placeholder **`###`** with your suffix (**Ctrl+F**).
   
      ```ABAP
-      METHOD save_modified.
-        "send notification for new agency instances
-        IF create IS NOT INITIAL.
-          "raise event
-          RAISE ENTITY EVENT zr_agency###~entity_created
-           FROM VALUE #(
-             FOR agency IN create-agency
-               "transferred information
-               ( %key        = agency-%key
-                 agency_id   = agency-agencyId
-                 agency_name = agency-agencyName
-                 created_at  = agency-LocalCreatedAt
-               )
-             ).
-        ENDIF.
-      ENDMETHOD.  
+     METHOD save_modified.
+       "send notification for new agency instances
+       IF create IS NOT INITIAL.
+         "raise event
+         RAISE ENTITY EVENT zr_agency###~entity_created
+          FROM VALUE #(
+            FOR agency IN create-agency
+              "transferred information
+              ( %key        = agency-%key
+                agency_id   = agency-agencyId
+                agency_name = agency-agencyName
+                created_by  = agency-LocalCreatedBy
+                created_at  = agency-LocalCreatedAt
+              )
+            ).
+       ENDIF.
+     ENDMETHOD.  
      ```
   
      <img src="images/event5.png" alt="Raise event" width="70%">    
@@ -195,19 +197,20 @@ For the local event consumption, you will implement an event handler class that 
   3. Replace the default table definition with the source code provided below and replace all occurences of the placeholder **`###`** with your suffix. 
   
       <pre lang="ABAP">
-        @EndUserText.label : 'Event handler - New agency data'
-        @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
-        @AbapCatalog.tableCategory : #TRANSPARENT
-        @AbapCatalog.deliveryClass : #A
-        @AbapCatalog.dataMaintenance : #RESTRICTED
-        define table zagency###_e {
+      @EndUserText.label : 'Event handler - New agency data'
+      @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+      @AbapCatalog.tableCategory : #TRANSPARENT
+      @AbapCatalog.deliveryClass : #A
+      @AbapCatalog.dataMaintenance : #RESTRICTED
+      define table zagency###_e {
 
-          key mandt   : mandt not null;
-          key uuid    : sysuuid_x16 not null;
-          agency_id   : abap.numc(6);
-          agency_name : abap.char(80);
-          created_at  : abp_creation_tstmpl;
-        }
+        key mandt   : mandt not null;
+        key uuid    : sysuuid_x16 not null;
+        agency_id   : abap.numc(6);
+        agency_name : abap.char(80);
+        created_by  : abp_creation_user;
+        created_at  : abp_creation_tstmpl;
+      }
       </pre>  
   
       <img src="images/event7.png" alt="Event Handler Class" width="50%"> 
@@ -279,6 +282,7 @@ For the local event consumption, you will implement an event handler class that 
               lr_entity_created-uuid        = get_uuid( ).
               lr_entity_created-agency_id   = lr_created->agency_id.
               lr_entity_created-agency_name = lr_created->agency_name.
+              lr_entity_created-created_by  = lr_created->created_by.
               lr_entity_created-created_at  = lr_created->created_at.
 
               "insert to db
@@ -357,7 +361,7 @@ Now that you've...
 
 you can continue with ...
 - the next exercise ► **[Exercise 3: Play Around with the GenAI-based ADT Wizard (Beta)](../ex03/README.md)**.
-- or directly with the next exercise block (B) ► **[Exercise 4: Generate a read-only OData UI Service with GenAI](../ex04/README.md)**   
+- or directly with the next exercise block (B) ► **[Exercise 4: Generate a read-only OData UI Service with GenAI](../ex04/README.md)**     
 
 ## License
 
