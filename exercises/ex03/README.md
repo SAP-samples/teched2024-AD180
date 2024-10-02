@@ -1,4 +1,4 @@
-[Home - RAP120](/README.md#exercises)
+[Home - AD180](/README.md#exercises)
 
 # Exercise 3: Play Around with the GenAI-based ADT Wizard
 
