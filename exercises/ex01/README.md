@@ -376,7 +376,7 @@ You will create an ABAP package, generate all development artefacts using the Ge
                       agency~phone_number   AS phone_number ,
                       agency~email_address  AS email_address,
                       agency~web_address    AS web_address
-                      ORDER BY agency_id UP TO 50 ROWS 
+                      ORDER BY agency_id UP TO 5 ROWS 
                 ).
               COMMIT WORK.
               out->write( |[RAP120] Demo agency data successfully generated. | ).
