@@ -1,4 +1,4 @@
-[Home - RAP120](/README.md#exercises)
+[Home - AD180](/README.md#exercises)
 
 # Exercise 4: Generate read-only OData UI Service E2E with GenAI and RAP
 
