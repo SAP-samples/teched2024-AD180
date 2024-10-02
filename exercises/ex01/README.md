@@ -1,4 +1,4 @@
-[Home - RAP120](/README.md#exercises)
+[Home - AD180](/README.md#exercises)
 
 # Exercise 1: Generate transactional OData UI Service E2E with GenAI and RAP
 
