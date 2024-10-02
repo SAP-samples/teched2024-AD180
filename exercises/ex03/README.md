@@ -119,7 +119,7 @@ Thank you for stopping by!
 
 You can now ...
 - continue with the next exercise block (B) ► **[Exercise 4: Generate a read-only OData UI Service with GenAI](../ex04/README.md)**   
-- or return to ► **[Home - RAP120](/README.md#exercises)**.
+- or return to ► **[Home - AD180](/README.md#exercises)**.
 
 ## License
 
