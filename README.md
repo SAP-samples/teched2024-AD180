@@ -101,13 +101,13 @@ Learn how to build a read-only SAP Fiori app with the ABAP RESTful Application P
 
 ### 🛠 Optional Exercise: Create and deploy a SAP Fiori elements app with SAP BAS
 
-Create a productive SAP Fiori elements List Report app with the SAP Business Application Studio (SAP BAS) on top of an OData service built with the ABAP RESTful Application Programming Model (RAP) and deploy it into the SAP BTP ABAP Environment system. 
+Create a productive SAP Fiori elements List Report app with SAP Build Code on top of an OData service built using the ABAP RESTful Application Programming Model (RAP) and deploy it to the SAP BTP ABAP Environment system. 
 
 > ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B, which are independent exercises blocks.
 
 | Exercise | -- |
 | ------------- |  -- |
-| [Exercise 6: Create an SAP Fiori elements app with SAP Business Application Studio and deploy it to the SAP BTP ABAP Environment](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
+| [Exercise 6: Create and deploy an SAP Fiori app to the SAP BTP ABAP Environment with SAP Business Application Studio](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
  
 
 ## Known Issues
