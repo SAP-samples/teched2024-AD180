@@ -355,7 +355,9 @@ Now that you've...
 - created a local event handler, and
 - tested the enhanced Fiori elements-based _Managing Agencies_ App,
 
-you can continue with the next exercise - **[Exercise 3: Play Around with the GenAI-based ADT Wizard (Beta)](../ex03/README.md)**.
+you can continue with ...
+- the next exercise ► **[Exercise 3: Play Around with the GenAI-based ADT Wizard (Beta)](../ex03/README.md)**.
+- or directly with the next exercise block (B) ► **[Exercise 4: Generate a read-only OData UI Service with GenAI](../ex04/README.md)**   
 
 ## License
 
