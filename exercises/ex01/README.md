@@ -282,11 +282,15 @@ You will create an ABAP package, generate all development artefacts using the Ge
  
       <img src="images/p13c.png" alt="Adjust generated UI service" width="50%"> 
  
-   3. Remove some fields - e.g. `Street`, `PostalCode`, `CountryCode`, `PhoneNumber`, `EmailAddress`, and `WebAddress` - from the filter bar by deleting or commenting out (`//`) the element annotation block **`@UI.selectionField`** as follows: 
+   3. Adjust the filter bar by removing some fields by deleting or commenting out (`//`) the element annotation block **`@UI.selectionField`** as shown in the screenshot below. 
+
+      For example, remove **`AgencyName`**, **`Street`**, **`PostalCode`**, **`CountryCode`**, **`PhoneNumber`**, **`EmailAddress`**, and **`WebAddress`** - from the filter bar. 
  
       <img src="images/p13d.png" alt="Adjust generated UI service" width="30%">
  
-   4. Remove some fields - e.g. `Street`, `PostalCode`, `CountryCode`, `PhoneNumber`, `EmailAddress`, and `WebAddress` - from the list table  by deleting or commenting out (`//`) the element annotation block **`@UI.lineItem`** as follows:  
+   4. Adjust the list table on the entry page by removing some of the table columns by deleting or commenting out (`//`) the element annotation block **`@UI.lineItem`** as shown in the screenshot. 
+ 
+      For example, remove following table columns - e.g. **`Street`**, **`PostalCode`**, **`CountryCode`**, **`PhoneNumber`**, **`EmailAddress`**, and **`WebAddress`**.   
  
       <img src="images/p13e.png" alt="Adjust generated UI service" width="30%">
  
