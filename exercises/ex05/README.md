@@ -1,4 +1,4 @@
-[Home - RAP120](/README.md#exercises)
+[Home - AD180](/README.md#exercises)
 
 # Exercise 5: Implement the read-only Treeview for Hierachical Data Display
 
@@ -223,7 +223,7 @@ you are done with this exercise group (B). Congratulations! 🎉
 
 In this hands-on exercise group, you have hopefully have some more insights into new ABAP Cloud capabilities such as the GenAI generation of OData-based UI services and tree-views! Note that SAP plans to support editable treeviews in the future. Learn more in the [ABAP Cloud Roadmap Information](https://help.sap.com/docs/abap-cross-product/roadmap-info/ui-services).
 
-You can now return to ► **[Home - RAP120](/README.md#exercises)**.
+You can now return to ► **[Home - AD180](/README.md#exercises)**.
 
 ## License
 
