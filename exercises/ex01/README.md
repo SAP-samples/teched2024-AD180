@@ -274,11 +274,18 @@ You will create an ABAP package, generate all development artefacts using the Ge
       @UI.headerInfo.title.value: 'AgencyId'
       ```
       
-      and replace the line _`@UI.headerInfo.description.value: 'Uuid'`_ with 
+      Replace the line _`@UI.headerInfo.description.value: 'Uuid'`_ with 
  
       ```
       @UI.headerInfo.description.value: 'AgencyName'
       ```
+      
+      Insert the code snippet below to specify _Agency_ as type name and _Agencies_ as its plural in the header info: 
+ 
+      ```
+      @UI.headerInfo.typeName: 'Agency'
+      @UI.headerInfo.typeNamePlural: 'Agencies'
+      ``` 
  
       <img src="images/p13c.png" alt="Adjust generated UI service" width="50%"> 
  
