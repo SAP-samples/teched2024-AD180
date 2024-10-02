@@ -337,7 +337,7 @@ At the end, you will publish and preview your _Employee_ app using the _Fiori El
                       employee~manager          AS manager_id,
                       @dummy_manager_uuid       AS manager_uuid   "dummy manager UUID                      
 
-                      ORDER BY employee UP TO 2000 ROWS
+                      ORDER BY employee UP TO 2010 ROWS
                 ).
 
               "assign correct manager UUID
