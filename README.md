@@ -65,10 +65,8 @@ Before completing the exercises in this repository, you need to:
 > In this exercise block, you will learn how to build a **transactional**, draft-enabled SAP Fiori app from scratch using RAP powered by Joule's ABAP developer capabilities to manage _agency_ data. You will then learn how to define and raise business events for loosely coupled integration scenarios. Finally, you will learn how to implement an event handler for the local consumption of the RAP business events directly on the application server.
 
 <details>
-  <summary>Resulting app 01 > Click to expand!</summary>
-    **_Manage Agencies_ app**
-  
-    <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
+   <summary>Resulting SAP Fiori app 01: Manage Agencies > Click to expand!</summary>
+     <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
 </details>  
 
 | Exercise Block A | -- |
@@ -86,12 +84,9 @@ Before completing the exercises in this repository, you need to:
 > ℹ️ **Note**: This is a standalone exercise block that can be completed independently of the previous exercise block (A). In case you are starting with this exercise block, then please start with [Getting Started](exercises/ex0/README.md). 
 
 <details>
-  <summary>Resulting app 02 > Click to expand!</summary>
-    **_Display _Employees_ app**
-  
+  <summary>Resulting SAP Fiori app 02: Display Employee > Click to expand!</summary>  
     <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
 </details>  
-
 
 
 | Exercise Block B | -- |
@@ -100,14 +95,14 @@ Before completing the exercises in this repository, you need to:
 | [Exercise 5: Implement the read-only treeview for hierachical data display](exercises/ex05/README.md) | -- |
 
 
-### 🛠 Optional Exercise: Create and deploy a SAP Fiori elements app with SAP BAS
+### 🛠 Optional Exercise: Create and deploy a SAP Fiori elements app with SAP Build Code
 
-> The main exercises above focus on the development capabilities available in the ABAP Development Tools for Eclipse (ADT). The _SAP Fiori elements App Preview_ integrated in ADT is used to preview of the resulting app. To create, deploy, and run the actual SAP Fiori elements-based _Manage Agency_ or _Manage Employee_ app using SAP Build COde (especially the _SAP Business Application Studio_), follow the instructions in the following tutorial from the SAP Developers' Center:
+> To create, deploy, and run the actual SAP Fiori elements-based _Manage Agency_ or _Manage Employee_ app using SAP Build COde (especially the _SAP Business Application Studio_), follow the instructions provided in the tutorial below.    
+> The _SAP Fiori elements App Preview_ integrated in ADT is only used to preview of the resulting app as the name indicates. 
 
-🛠 [Exercise 6: Create and deploy an SAP Fiori app to the SAP BTP ABAP Environment with SAP Business Application Studio | SAP Tutorials](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html)
+<!-- > ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B, which are independent exercises blocks. -->
 
-> ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B, which are independent exercises blocks.
-
+[Exercise 6: Create and deploy an SAP Fiori app to the SAP BTP ABAP Environment with SAP Business Application Studio | SAP Tutorials](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html)
 
 ## Known Issues
 [^Top of page](#)
