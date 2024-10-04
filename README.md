@@ -6,10 +6,14 @@
 
 This repository contains the material for the SAP TechEd 2024 session called **AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities**.
 
+>> **DISCLAIMER**:   
+>> Please note that the GenAi capabilities used in this hands-on workshop are part of a beta release.   
+>> This workshop and SAP's strategy and possible future developments are subject to change and may be changed by SAP at any time for any reason without notice. 
+
 - [Requirements for attending this workshop](#requirements-for-attending-this-workshop)
 - [Overview](#overview)
+- [Presentation & Replay](#recording)
 - [Exercises](#exercises)
-- [Recording](#recording)
 - [How to obtain support](#how-to-obtain-support) 
 - [Further Information](#further-information)
 
@@ -18,36 +22,19 @@ This repository contains the material for the SAP TechEd 2024 session called **A
 
 ABAP Cloud is the development model for building clean core compliant apps, services, and extensions on SAP S/4HANA Cloud, SAP S/4HANA, and SAP BTP ABAP Environment. ABAP Cloud covers different development scenarios such as transactional, analytical, intgeration, and enterprise search scenarios. The ABAP RESTful Application Programming Model (RAP) ist at the heart of ABAP Cloud for building transactional SAP Fiori apps, OData-based Web API, local APIs, and business events.
 
-This session introduces attendees to the Joule's ABAP developer capabilities that support the fast development of transactional asa well as read-only SAP Fiori elements apps with ABAP Cloud. Attendees will learn how to display data in hierarchical treeview and how to define and raise business events with ABAP Cloud that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios. 
-
-**SAP Fiori element-based app 01**  
-In the first exercise block, you will learn how to build a transactional, draft-enabled SAP Fiori app with ABAP RAP powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios. You will also learn to implement an event handler for the local consumption of the RAP business events.
-
-<details>
-  <summary>Resulting app 01 > Click to expand!</summary>
-    <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
-</details>  
-
-**SAP Fiori element-based app 02**  
-In the second exercise block, you will learn how to build a read-only SAP Fiori app with ABAP Cloud assisted Joule and display data in a hierachical tree view.
-
-<details>
-  <summary>Resulting app 02 > Click to expand!</summary>
-    <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
-</details>  
-
-
+This jump-start session introduces attendees to the Joule's ABAP developer capabilities that support rapid development of both transactional and read-only SAP Fiori elements-based apps with ABAP Cloud. Attendees will also learn how to display data in hierarchical treeview in SAP Fiori apps and how to use ABAP Cloud to define and raise business events that can be consumed locally or remotely via SAP Event Mesh for loosely coupled integration scenarios. 
 
 ## Requirements for attending this workshop
 [^Top of page](#)
 
-The requirements to follow the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT) installation 
-on your laptop or PC and the access to a suitable ABAP system with a connection to the GenAI Hub, i.e. SAP BTP ABAP Environment with the connection to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core). The appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) (package `/DMO/FLIGHT`) must be imported into the relevant system. 
+> The prerequisites for following the exercises in this repository are the installation of the latest version of the ABAP Development Tools for Eclipse (ADT)
+on your laptop or PC and the access to a suitable ABAP system (i.e. SAP BTP ABAP Environment) connected to the [SAP AI Core](https://discovery-center.cloud.sap/serviceCatalog/sap-ai-core). In addition, the appropriate flavor of the [ABAP Flight Reference Scenario](https://github.com/SAP-samples/abap-platform-refscen-flight) (package `/DMO/FLIGHT`) must be imported into the system. 
 
 Before completing the exercises in this repository, you need to:
+
 1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
-2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) *
-   > ℹ️ **Note**: For the the SAP TechEd Virtual 2024, the _SAP BTP ABAP Environment_ trial will be connected to the SAP AI Core from the 8th to the 11th October.
+2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
+   > ℹ️ **Note**: The _SAP BTP ABAP Environment_ trial will be connected to the SAP AI Core from 8 to 11 October for SAP TechEd Virtual 2024.
 3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
 4. Adapt the Web Browser settings in your ADT installation:   
     i) Choose _Window_ > _Preferences_ in the menu bar.   
@@ -63,15 +50,24 @@ Before completing the exercises in this repository, you need to:
  🔗[Access the presentation](url)
 -->
 
+## Presentation & Replay
+
+* Watch the live jump-start session on 📅 Tuesday, Oct 8 | 🕐 7:30 PM - 7:55 PM CEST (10:30 AM – 10:55 AM PDT)    
+  [AD180 | Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722394882075001dE44)    
+  
+* Access the presentation: 📄[AD180@SAP_TechEd_2024.pdf](/exercises/images/AD180v@SAP_TechEd_2024.pdf)
+
 ## Exercises
 [^Top of page](#)
 
 ### 🛠Exercise Block A: Building Transactional, Draft-enabled SAP Fiori Apps with Business Events
 
-Learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) powered by Joule's ABAP Developer capabilities, define and raise business events for loosely coupled scenarios.
+> In this exercise block, you will learn how to build a **transactional**, draft-enabled SAP Fiori app from scratch using RAP powered by Joule's ABAP developer capabilities to manage _agency_ data. You will then learn how to define and raise business events for loosely coupled integration scenarios. Finally, you will learn how to implement an event handler for the local consumption of the RAP business events directly on the application server.
 
 <details>
   <summary>Resulting app 01 > Click to expand!</summary>
+    **_Manage Agencies_ app**
+  
     <img src="exercises/images/fioriapp01.png" alt="create package" width="100%">
 </details>  
 
@@ -85,15 +81,18 @@ Learn how to build a transactional, draft-enabled SAP Fiori app with the ABAP RE
 
 ### 🛠Exercise Block B: Displaying hierachical data in SAP Fiori UI using read-only treeview
 
-Learn how to build a read-only SAP Fiori app with the ABAP RESTful Application Programming Model (RAP) assisted by generative AI and display hierachical data in a read-only treeview.
+> In this exercise block, you will learn how to build a **read-only** SAP Fiori app using ABAP Cloud assisted by the Joule's ABAP developer capabilities to display _employee_ data. You will then learn how to define and display hierarchical data in a read-only treeview in an SAP Fiori app.
+> 
+> ℹ️ **Note**: This is a standalone exercise block that can be completed independently of the previous exercise block (A). In case you are starting with this exercise block, then please start with [Getting Started](exercises/ex0/README.md). 
 
 <details>
   <summary>Resulting app 02 > Click to expand!</summary>
+    **_Display _Employees_ app**
+  
     <img src="exercises/images/fioriapp02.png" alt="create package" width="100%">
 </details>  
 
-> ℹ️ **Note**: This is a standalone exercise that can be carried out independently of the previous exercise block (A).   
-> In case you start with this block then please begin with [Getting Started](exercises/ex0/README.md). 
+
 
 | Exercise Block B | -- |
 | ------------- |  -- |
@@ -103,14 +102,12 @@ Learn how to build a read-only SAP Fiori app with the ABAP RESTful Application P
 
 ### 🛠 Optional Exercise: Create and deploy a SAP Fiori elements app with SAP BAS
 
-Create a productive SAP Fiori elements List Report app with SAP Build Code on top of an OData service built using the ABAP RESTful Application Programming Model (RAP) and deploy it to the SAP BTP ABAP Environment system. 
+> The main exercises above focus on the development capabilities available in the ABAP Development Tools for Eclipse (ADT). The _SAP Fiori elements App Preview_ integrated in ADT is used to preview of the resulting app. To create, deploy, and run the actual SAP Fiori elements-based _Manage Agency_ or _Manage Employee_ app using SAP Build COde (especially the _SAP Business Application Studio_), follow the instructions in the following tutorial from the SAP Developers' Center:
+
+🛠 [Exercise 6: Create and deploy an SAP Fiori app to the SAP BTP ABAP Environment with SAP Business Application Studio | SAP Tutorials](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html)
 
 > ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B, which are independent exercises blocks.
 
-| Exercise | -- |
-| ------------- |  -- |
-| [Exercise 6: Create and deploy an SAP Fiori app to the SAP BTP ABAP Environment with SAP Business Application Studio](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html) (_Tutorial in the SAP Developer Center_)| -- |
- 
 
 ## Known Issues
 [^Top of page](#)
