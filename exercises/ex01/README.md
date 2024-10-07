@@ -387,7 +387,8 @@ You will create an ABAP package, generate all development artefacts using the Ge
               out->write( |[RAP120 / AD180] Demo agency data successfully generated. | ).
             ENDMETHOD.       
           ENDCLASS.
-         ```   
+         ```
+         
       </details>   
 
       <img src="images/data4.png" alt="Generate demo data" width="70%">
