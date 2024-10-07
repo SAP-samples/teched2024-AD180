@@ -326,7 +326,7 @@ At the end, you will publish and preview your _Employee_ app using the _Fiori El
               "insert employee data
               INSERT zemployee###  FROM (
                   SELECT
-                    FROM /dmo/employee_hr AS employee
+                    FROM /DMO/I_Employee_HR AS employee
                     FIELDS
                       uuid(  )                  AS uuid,
                       employee~employee         AS employee_id,
