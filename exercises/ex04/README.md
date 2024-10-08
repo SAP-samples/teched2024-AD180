@@ -330,9 +330,9 @@ At the end, you will publish and preview your _Employee_ app using the _Fiori El
                     FIELDS
                       uuid(  )                  AS uuid,
                       employee~employee         AS employee_id,
-                      employee~first_name       AS first_name,
-                      employee~last_name        AS last_name,
-                      employee~salary_currency  AS salary_curr,
+                      employee~firstname       AS first_name,
+                      employee~lastname        AS last_name,
+                      employee~salarycurrency  AS salary_curr,
                       employee~salary           AS salary,
                       employee~manager          AS manager_id,
                       @dummy_manager_uuid       AS manager_uuid   "dummy manager UUID                      
