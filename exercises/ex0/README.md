@@ -9,7 +9,7 @@
 
 2. Please note that ADT dialogs and views, as well as Fiori UIs, may change in future releases.
 
-3. You can find a solution for this workshop in the development package **`ZRAP120_SOL`**, or you can import it from [here](https://github.com/SAP-samples/abap-platform-rap120/) into your system.  
+3. You can find a solution for this workshop in the development package **`ZRAP120_SOL`**, or you can import it from [here](https://github.com/SAP-samples/abap-platform-rap120/) into the relevant system if not yet available..  
 
 4. You've already received user credentials (_read Login Details below_) from the SAP Team  **or** created an account on the SAP BTP ABAP environment Trial.
 
