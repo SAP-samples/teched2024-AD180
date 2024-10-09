@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called **AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities**.
+This repository contains the material for the SAP TechEd 2024 session called **AD180 - Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP developer capabilities**.
 
 >> **DISCLAIMER**:   
 >> Please note that the GenAi capabilities used in this hands-on workshop are part of a beta release.   
@@ -53,7 +53,7 @@ Before completing the exercises in this repository, you need to:
 ## Presentation & Replay
 
 * Watch the live jump-start session on 📅 Tuesday, Oct 8 | 🕐 7:30 PM - 7:55 PM CEST (10:30 AM – 10:55 AM PDT)    
-  [AD180 | Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP Developer capabilities](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722394882075001dE44)    
+  [AD180 | Build SAP Fiori Apps with ABAP Cloud powered by Joule's ABAP developer capabilities](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722394882075001dE44)    
   
 * Access the presentation: 📄[AD180@SAPTechEd2024.pdf (extended version)](/exercises/images/AD180@SAPTechEd2024.pdf)
 
