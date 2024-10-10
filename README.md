@@ -14,6 +14,7 @@ This repository contains the material for the SAP TechEd 2024 session called **A
 - [Overview](#overview)
 - [Presentation & Replay](#recording)
 - [Exercises](#exercises)
+- [Solution Package](#solution-package)
 - [How to obtain support](#how-to-obtain-support) 
 - [Further Information](#further-information)
 
