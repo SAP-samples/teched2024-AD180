@@ -43,12 +43,6 @@ Before completing the exercises in this repository, you need to:
     iv) Select one of the listed external web browsers that are available, e.g. _Default system web browser_.    
         ❗Make sure that _Internet Explorer_ is not selected.   
 
-<!--   
-## Overview
-[^Top of page](#)
-
- 🔗[Access the presentation](url)
--->
 
 ## Presentation & Replay
 
@@ -103,6 +97,10 @@ Before completing the exercises in this repository, you need to:
 <!-- > ℹ️ **Note**: This exercise can be completed immediately after Exercise Block A and Exercise Block B, which are independent exercises blocks. -->
 
 [Exercise 6: Create and deploy an SAP Fiori app to the SAP BTP ABAP Environment with SAP Business Application Studio | SAP Tutorials](https://developers.sap.com/tutorials/abap-environment-deploy-fiori-elements-ui.html)
+
+## Solution Package
+
+You can find a solution for this workshop in the development package **`ZRAP120_SOL`**, or you can import it from [**here**](https://github.com/SAP-samples/abap-platform-rap120/blob/main/README.md#solution-package) into the relevant system if not yet available.
 
 ## Known Issues
 [^Top of page](#)
