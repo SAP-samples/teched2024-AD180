@@ -34,10 +34,12 @@ on your laptop or PC and the access to a suitable ABAP system (i.e. SAP BTP ABAP
 Before completing the exercises in this repository, you need to:
 
 1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
+<!--
 2. [Create an user on the SAP BTP ABAP Environment Trial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
    > ℹ️ **Note**: The _SAP BTP ABAP Environment_ trial will be connected to the SAP AI Core from 8 to 11 October for SAP TechEd Virtual 2024.
-3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
-4. Adapt the Web Browser settings in your ADT installation:   
+-->   
+2. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
+3. Adapt the Web Browser settings in your ADT installation:   
     i) Choose _Window_ > _Preferences_ in the menu bar.   
     ii) Navigate to _General_ > _Web Browser_.  
     iii) Activate the radio button _Use external web browser_.   
