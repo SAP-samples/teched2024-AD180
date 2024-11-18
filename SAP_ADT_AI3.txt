@@ -1,0 +1,40 @@
+{
+  "URL.headers.x-sap-security-session": "create",
+  "binding": {
+    "env": "cf",
+    "id": "f11be7aa-117c-461e-aa68-9fa0f9d0a912",
+    "type": "oauth",
+    "version": "1.0.1.1"
+  },
+  "catalogs": {
+    "abap": {
+      "path": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2",
+      "type": "sap_abap_catalog_v1"
+    }
+  },
+  "endpoints": {
+    "abap": "https://77cf5096-ca53-4769-b312-8932ed4e3f34.abap.eu10.hana.ondemand.com"
+  },
+  "preserve_host_header": true,
+  "sap.cloud.service": "com.sap.cloud.abap",
+  "systemid": "AI4",
+  "uaa": {
+    "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+    "clientid": "sb-xs-77cf5096-ca53-4769-b312-8932ed4e3f34!b390836|xsuaa-abapcp-prod-eu10!b4584",
+    "clientsecret": "f11be7aa-117c-461e-aa68-9fa0f9d0a912$AYU2-adG7j_PcppklbPRTyYJj3Imi2XXBHOIFlPGSHU=",
+    "credential-type": "binding-secret",
+    "identityzone": "techxchange-te4",
+    "identityzoneid": "71301999-65fd-4922-a4ba-84211c75c526",
+    "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+    "serviceInstanceId": "77cf5096-ca53-4769-b312-8932ed4e3f34",
+    "subaccountid": "71301999-65fd-4922-a4ba-84211c75c526",
+    "tenantid": "71301999-65fd-4922-a4ba-84211c75c526",
+    "tenantmode": "dedicated",
+    "uaadomain": "authentication.eu10.hana.ondemand.com",
+    "url": "https://techxchange-te4.authentication.eu10.hana.ondemand.com",
+    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn1D1OsCMZNKTrlLns1QW\njAtKJO/bsHoWqCI2fQ7QWPSYgQj2jqO34y4FvdlTZ29uVWJX7S4ITZl4+9FRBCGd\nHpaZgCjN09J5flsZX07AV1WxS15HJPvO5/L1GaAVx2bQFOYi+lP7Sqma3tplzXP5\nOvE3DFBm4Wn6wkBKfASHjAa2Z2/D1dskwJtb5Yct+Z9u/ElaT25wzYqXfXhkhrzx\n9ID2wQK7r4c0eYgnNVrzQg4YMt8xIGRXdYt8X9r5vbx8wxRrtdw81uQWeSTr20/n\nUaVTbzr/inMGq20q7DtaXzdJbk1SXpufvfsdz0FFZtDV2RudGR6Y8VkTaJxu3+Jl\nQQIDAQAB\n-----END PUBLIC KEY-----",
+    "xsappname": "xs-77cf5096-ca53-4769-b312-8932ed4e3f34!b390836|xsuaa-abapcp-prod-eu10!b4584",
+    "zoneid": "71301999-65fd-4922-a4ba-84211c75c526"
+  },
+  "url": "https://77cf5096-ca53-4769-b312-8932ed4e3f34.abap.eu10.hana.ondemand.com"
+}
