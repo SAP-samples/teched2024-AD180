@@ -132,9 +132,9 @@ You will create an ABAP package, generate all development artefacts using the Ge
       Then go to your service binding ![service binding](../images/adt_srvb.png)**`ZUI_AGENCY###_O4`** which is opened in the editor and click **Publish** to publish its local service endpoint to view service URL, entity sets, and associations.  
  
       <img src="images/p10.png" alt="generate UI service" width="100%"> 
+
  
-      > **ℹ️ List of the generated objects**:
- 
+      **ℹ️ List of the generated objects**: 
       <details>
         <summary>Click to expand!</summary>
 
