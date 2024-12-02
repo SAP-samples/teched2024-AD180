@@ -11,7 +11,8 @@ This repository contains the material for the SAP TechEd 2024 session called **A
 > Please note that this hands-on workshop was offered in a testing environment at various SAP TechEd 2024 events. However, the setup and functionality have since been removed and **the exercises can no longer be completed**. 
 > The official delivery of AI capabilities in ABAP is planned for next year, with the first release planned for Q1 2025*.
 >
->> *Please note that information about SAP‘s strategy and possible future developments is subject to change and may be changed by SAP at any time for any reason without prior notice. 
+>> *Please note that information about SAP‘s strategy and possible future developments is subject to change and may be changed by SAP at any time for any reason without prior notice. Check out the [SAP Road Map Explorer](https://roadmaps.sap.com/board?range=CURRENT-LAST&PRODUCT=73555000100800001164#Q4%202024) and the [ABAP Cloud Roadmap](https://help.sap.com/docs/abap-cross-product/roadmap-info/genai) for more details. 
+>> 
 ---
 
 <!--
